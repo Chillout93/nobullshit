@@ -1,0 +1,75 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --env.ENVIRONMENT=local --hot --mode development --watch",
+    "start-debug": "webpack-dev-server --env.ENVIRONMENT=debug --hot --mode development --watch",
+    "start-release": "webpack-dev-server --env.ENVIRONMENT=release --hot --mode development --watch",
+    "build-debug": "webpack --env.ENVIRONMENT=debug --mode production",
+    "build-release": "webpack --env.ENVIRONMENT=release --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/webpack-env": "^1.13.6",
+    "and": "0.0.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.12",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@types/axios": "^0.14.0",
+    "@types/bootstrap": "^4.1.2",
+    "@types/dotenv": "^6.1.0",
+    "@types/lodash": "^4.14.118",
+    "@types/react": "^16.7.6",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-table": "^6.7.16",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.1.3",
+    "core": "^1.0.0",
+    "dotenv": "^6.1.0",
+    "dotenv-webpack": "^1.5.7",
+    "font-awesome": "^4.7.0",
+    "immutable": "^4.0.0-rc.12",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "node-waf": "^1.0.0",
+    "react-data-table": "^0.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-table": "^6.8.6",
+    "react-toastify": "^4.4.3"
+  }
+}
